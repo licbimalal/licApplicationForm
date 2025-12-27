@@ -2,153 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>LIC Application Form</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="BHA.css">
- <style>
-    *{border-style: none;
-        border-color: white;
-        font-weight: 1000px;
-        font-size: 11px;
-}
-        td{font-weight: 900;}
-        .head{font-weight: lighter;
-        text-decoration: underline;}
-        .MOBILE{border-color: rgb(255, 255, 255);
-        border-style: double;
-        list-style: circle;}
-        .documents{font-weight: 900px;
-        }
-        #name{margin-right: 40px;}
-        input{}
-        .pt{width: 10px;}
-        .income{width: 90px;}
-        .Input{width: 2px;}
-        input{margin-left:9px;
-        font-size: small;}
-        #nam{margin-left: 50px;
-        font-weight: 900;
-      font-size: large;}
-button{background-color: green;
-color:white;
-font-size: larger;
-font-weight: bolder;
-height: 30px;
-width: 200px;
-text-align: center;
-border-radius: 180px;
-}
-#thankyou{text-align: center;
-font-size: 2em;
-margin-top: 50px;
-display: none;}
-</style>
-  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 20px;
+    }
+    .container {
+      max-width: 500px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #004aad;
+    }
+    label {
+      font-weight: bold;
+      margin-top: 10px;
+      display: block;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      margin-top: 15px;
+      padding: 10px;
+      background: #004aad;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #003080;
+    }
+  </style>
 </head>
+
 <body>
+  <div class="container">
+    <h2>LIC Application Form</h2>
 
+    <form id="licForm">
+      <label>Full Name</label>
+      <input type="text" id="name" required>
 
-   <center>
-      <div id="A.ID"> <h1 id="head" class="head">ANANDA(A.ID.- <input id="header" class="head" type="text"placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ "> )</h1></div>
-   </center>
- <form id="myform" action="mailto: bhaskar.branjan@gmail.com" 
- method="post" enctype="text/plain" 
- onsubmit="redirectPage()">
-    <DIv id="form">
-    <h1 id="nam"><label for="name"> NAME  </label><INput  id="name" name="NAME" required class="Document"  type="text" placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __ _ _ _ _ _ _ _ _ _ _ _ _ _ _  " /></h1>
-       <ol type="1">
-        <h3>1. AADHAR NO  </b><input name="1.AADHAR." pattern="\d{12}"  placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ " required="" type="tel" value="" id="aad.no"><b>  </b>  <label for="AADHAR-NO."></label></h3>
-        <h3>2. PANCARD NO.<input name="2.PANCARD NO."class="PANCARD" id="pan-card.no" placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"/></h3>
-        <h3>3. DATE OF BIRTH<input type="date" name="3.DATE OF BIRTH"  placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ " required="" id="dat" type="tel" value=""></h3>
-        <h3><label for="MOBILE NO."> 
-           4. MOBILE NO. <b>  </b><input name="4.MOBILE NO." pattern="\d{10}"  placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ " required="" id="mo.no" type="tel" value=""></h3>
-        <h3><label for="5.EMAIL ID"> 5. EMAIL ID</label><INput type="email" id="5.EMAIL ID" name="5.EMAIL ID" required class="Document"  type="text" placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" /></h3>
-        <h3>6. FATHER'S NAME<b>  </b> <Input id="father" name="6.FATHER'S NAME"class="FATHER" placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ "/></Input></h3>
-        <h3>7. MOTHER'S NAME<b>  </b> <Input name="7.MOTHER'S NAME" id="mother" class="FATHER" placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ "/></Input></h3>
-        <h3>8. PLAN <b>/</b>TERM</b>/</b>PT<b>/</b>MODE<b>/</b>SA<b>  </b> <input name="8.PLAN"id="plan" class="PT" placeholder="_ _ _ _ _ _ _ _ _ _ _"/>/
-          <input name="TERM" id="TERM"class="PT" placeholder="_ _ _ _ _ _ _ _ _ _ _"/>/
-          <input name="PT" id="pt"class="PT" placeholder="_ _ _ _ _ _ _ _ _ _ _"/>/
-          <input name="MODE" id="mode" class="PT" placeholder="_ _ _ _ _ _ _ _ _ _ _"/>/
-          <input name="SA" id="sa" class="PT" placeholder="_ _ _ _ _ _ _ _ _ _ _"/></h3>
-        <h3>9. QUALIFICATION <Input id="qul" name="9.QUALIFICATION" class="" placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ "/></h3>
-        <h3>10. HIGHT/WEIGHT <Input name="10.HIGHT" id="hight" class="" placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ "/>/
-          <Input name="WEIGHT" id="WEIGHT" class="" placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ "/></h3>
-            <H3>11. DATE OF MARRIAGE<Input id="MARRIAGE" name="11.DATE OF MARRIAGE" type="date" class= "" placeholder=" _ _ _ _ _ _ _ _ _ _ _ _ /"></H3>
-       <h3><label for=".NOMINEE-NAME"> 12. NOMINEE NAME</label><INput id="NOMINEE NAME" name="12.NOMINEE NAME" required class="Document"  type="text" placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" /></h3>
-        <h3>13. NOMI.AADHAR NO.<input name="13. NOMI.AADHAR-NO." pattern="\d{12}"  placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ " required="" type="tel" value="" id="NOMI.AADHAR-NO"><b>  </b>  <label for="NOMI.AADHAR-NO"></label></h3> 
-        <h3>14. RELATION<input name="14.RELATION" id="RELATION" class="" placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ "/></h3>
-<!--thankyou-->
-        <center><div id="thankyou"><b>Thank you for response</b></div></center>
+      <label>Mobile Number</label>
+      <input type="tel" id="mobile" required>
 
-        <h3>15. NOMI. DATE OF BIRTH <input type="date" name="15.DATE OF BIRTH"  placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ " required="" id="NOMI.D.B" type="tel" value=""></h3>
-        <h3>16. DEPARTMENT / PRESENT EMPLOYEE<Input name="16.DEPARTMENT / PRESENT EMPLOYEE" id="DEPARTMENT" class="" placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ "/></h3>
-        <h3>17. DESIGNATION<input name="17.DESIGNATION" class="" id="DESIGNATION" placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ "/></h3>
-        <h3>18. JOB DURATION<input name="18.JOB DURATION" id="JOB"  type="month" class="" placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ "/></h3>
-        <h3><table>19. INCOME PER ANNUM <input type="hidden" name="19. INCOME PER ANNUM" id="">
-         <tr><td>  1.<Input name="i."  required=""  type="tel" value=""  class="i" placeholder=" _ _ _ _ _ _ _ _ _ _ _ _ _"/></td></tr>
-          <tr> <td>    2.<input name="ii."  required=""  type="tel" value=""  class="i" placeholder=" _ _ _ _ _ _ _ _ _ _ _ _ _"/></td></tr>
-            <tr> <td>   3.<input name="iii." required=""  type="tel" value=""  class="i" placeholder=" _ _ _ _ _ _ _ _ _ _ _ _ _"/></td></tr></table></h3>
-            <h3 name="20. PREVIOUS POLICY"><table>
-          <table>    20. PREVIOUS POLICY <input type="hidden" name="20. PREVIOUS POLICY" id="">
-                <tr><td>  1.<Input name="i." id="a" required=""type="tel" value=""  class="a" placeholder=" _ _ _ _ _ _ _ _ _ _ _ _ _"/></td></tr>
-                 <tr> <td>    2. <input name="ii."required=""type="tel" value=""  class="a" placeholder=" _ _ _ _ _ _ _ _ _ _ _ _ _"/></td></tr>
-                   <tr> <td>   3.<input name="iii." required=""type="tel" value=""  class="a" placeholder=" _ _ _ _ _ _ _ _ _ _ _ _ _"/></td></tr>
-                     <tr> <td>  4.<input name="iv."  required=""type="tel" value="" class="a" placeholder=" _ _ _ _ _ _ _ _ _ _ _ _ _"/></td></tr>
-                       <tr> <td>   5.<input name="v." required=""type="tel" value=""  class="a" placeholder=" _ _ _ _ _ _ _ _ _ _ _ _ _"/></td></tr></table></h3>
-            <td> 
-                <h3><input type="hidden" name="21.FAMILY HISTORY:-" id="">
-                  21.  FAMILY HISTORY:- <tr><td>FATHER <label for="FATHER"></label>
-                    <input name="FATHER" name="FATHER" type="tel" id="FATHER.n" 
-                    placeholder="................ " /> </td></tr>
-                 <tr>  <td>  MOTHER<label for=" MOTHER"></label>
-                    <input name="MOTHER" type="tel" id=" " 
-                    placeholder="................ " /></td></tr>
-                 <tr>        <td> BROTHER    <label for="BROTHER"></label>
-                    <input name="BROTHER" style="text-transform: uppercase;margin: 2px;width: 30px;border-style: none; border-color: white;" type="tel" class="BROTHER" 
-                    placeholder="................ " />     
-                    <input name="BROTHER" style="text-transform: uppercase;width: 30px;border-style: none; border-color: white;" type="tel" id="phone" 
-                                placeholder="....................... " />
-                                /<input name="BROTHER" style="text-transform: uppercase;width: 30px;border-style: none; border-color: white;" type="tel" id="phone" 
-                                placeholder="................ " />/<input name="BROTHER" style="text-transform: uppercase;width: 30px;border-style: none; border-color: white;" type="tel" id="phone" 
-                                placeholder="............. " />/<input name="BROTHER" style="text-transform: uppercase;width: 30px;border-style: none; border-color: white;" type="tel" id="phone" 
-                                placeholder="........... " /></td></tr>
-                 <tr>        <td> SISTER    <label for="SISTER"></label>
-                    <input name="SISTER" style="text-transform: uppercase;margin: 2px;width: 30px;border-style: none; border-color: white;" type="tel" id="phone" 
-                    placeholder="................ " />     
-                    <input name="SISTER" style="text-transform: uppercase;width: 30px;border-style: none; border-color: white;" type="tel" id="phone" 
-                                placeholder="....................... " />
-                                /<input name="SISTER" style="text-transform: uppercase;width: 30px;border-style: none; border-color: white;" type="tel" id="phone" 
-                                placeholder="................ " />/<input name="SISTER" style="text-transform: uppercase;width: 30px;border-style: none; border-color: white;" type="tel" id="phone" 
-                                placeholder="............. " />/<input name="SISTER" style="text-transform: uppercase;width: 30px;border-style: none; border-color: white;" type="tel" id="phone" 
-                                placeholder="........... " /></td></tr>
-                 <tr>        <td>   SPOUSE<input name="SPOUSE" style="text-transform: uppercase;width: 30px;border-style: none; border-color: white;" type="tel" id="phone" 
-                    placeholder="....................... " /></td></tr>
-                          </table></h3>
-                          <h3>
-                            <table>
-                              <tr> 22. CHILDREN'S NAME WITH DATE OF BIRTH <input type="hidden" name="22. CHILDREN'S NAME WITH DATE OF BIRTH" id="">
-                                 <TR>  <td>(i)<Input name="(i)" style="border-style: none; border-color: white;border-style: none; border-color: white;" class= "" placeholder=" _ _ _ _ _ _ _ _ _ _ _ _ _ "/></td><td><Input name="DATE OF BIRTH" style="border-style: none; border-color: white;" class= ""type="date" placeholder=" _ _ _ _ _ _ _ _ _ _ _ _ _ _ "></td></TR>
-                                 <TR>  <td>(ii)<Input name="(ii)" style="border-style: none; border-color: white;border-style: none; border-color: white;" class= "" placeholder=" _ _ _ _ _ _ _ _ _ _ _ _ _ "/></td><td><Input name="DATE OF BIRTH" style="border-style: none; border-color: white;" class= ""type="date" placeholder=" _ _ _ _ _ _ _ _ _ _ _ _ _ _ "></td></TR>
-                           <TR><td> (iii)<Input name="(iii)" style="border-style: none; border-color: white;" class= "" placeholder=" _ _ _ _ _ _ _ _ _ _ _ _ "/></td><td><Input name="DATE OF BIRTH" style="border-style: none; border-color: white;" class= ""type="date" placeholder=" _ _ _ _ _ _ _ _ _ _ _ _ _ _ "/></td></TR>
-                            <TR><td> (iv)<Input name="(iv)" style="border-style: none; border-color: white;" class= "" placeholder=" _ _ _ _ _ _ _ _ _ _ _ _ "/></td><td><Input name="DATE OF BIRTH" style="border-style: none; border-color: white;" class= ""type="date" placeholder=" _ _ _ _ _ _ _ _ _ _ _ _ _ _ "/></td></TR>
-                                </h3></tr></table> 
-        <h3>23. A/C DETAILS:-IFSC<Input name="23.A/C DETAILS:-IFSC" style="text-transform: uppercase;border-style: none; border-color: white;" class= "" placeholder=" _ _ _ _ _ _ _ _ _ _ _ _ "/>A/C NO.<Input style="text-transform: uppercase;" class= "" placeholder=" _ _ _ _ _ _ _ _ _ _ _ _ "/></h3>
-        <h3>24. NAME OF BANK<Input name="24.NAME OF BANK" style="text-transform: uppercase;border-style: none;border-style: none; border-color: white;" class= "" placeholder=" _ _ _ _ _ _ _ _ _ _ _ _ "/></h3>
-        <h3>25. MARK OF IDENTIFICATION<Input name="25.MARK OF IDENTIFICATION" style="text-transform: uppercase;border-style: none; border-color: white;" class= "" placeholder=" _ _ _ _ _ _ _ _ _ _ _ _ "/></h3>
-        <label for="*"> RECHECK ALL ABOVE IS CORRECT </label><INput type="checkbox" id="*" name="*" required class="Document"  type="text" placeholder="_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _" /></h2>
-        <center>
-           <button type="submit"onclick="show()" style="text-align: center;"><div style="text-align: center;"><h1 style="font-size: larger;text-align: center; padding-bottom: px;">submit</h1></div></button></CENter>
-    </Ol></DIv>
-</form>
-<script>
-   function submitform() {//hide the form 
-   document.getElementById
-    ("myform").style.didplay="none";
-   
-   //show the thank yue massage 
-   document.getElementById
-   ("thankyue").style.display="block";}
+      <label>Email</label>
+      <input type="email" id="email">
 
-</script>
-  </select></details>
-</body>
-</html>
+      <label>Date of Birth</label>
+      <input type="date" id="dob" required>
+
+      <label>Gender</label>
+      <select id="gender" required>
+        <option value="">Select</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+
+      <label>Policy Type</label>
+      <select id="policy" required>
+        <option value="">
